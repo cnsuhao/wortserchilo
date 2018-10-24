@@ -1,0 +1,3 @@
+herinneringen
+ - regex linguokodoj
+\{(\n[^}]+)+"alpha_2": "([^"]*)",(\n[^}]+)+"alpha_3": "([^"]*)",(\n[^}]+)+"name": "([^"]*)",(\n[^}]+)+\},\n

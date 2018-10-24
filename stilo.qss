@@ -1,0 +1,66 @@
+* {
+    background-color: #fff;
+    font-family: "Roboto";
+    font-size: 10pt;
+    font-weight: 350;
+}
+
+QTextEdit {
+    border: none;
+}
+
+QTreeView {
+    border: none;
+}
+
+QPushButton {
+    border: none;
+    background-color: none;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #00000000;
+    width: 8px;
+}
+
+QScrollBar::handle:vertical {
+    margin: 1px;
+    background: #aaa;
+    min-height: 40px;
+}
+
+QScrollBar::add-line:vertical { height: 0px; }
+QScrollBar::sub-line:vertical { height: 0px; }
+
+#kapo {
+    font-size: 14pt;
+    qproperty-alignment: AlignCenter;
+    font-weight: 300;
+}
+
+#tajpejo {
+    border: none;
+    font-size: 16pt;
+    font-weight: 250;
+    qproperty-alignment: AlignCenter;
+}
+
+#butonoDeLinguoj {
+    background-image: url(linguoj magra.png);
+    width: 30px;
+    height: 30px;
+}
+#butonoDeLinguoj[aktiva="true"] { background-image: url(linguoj.png); }
+#butonoDeLinguoj:hover { background-image: url(linguoj.png); }
+
+#butonoDeAgordoj {
+    background-image: url(agordoj magra.png);
+    width: 30px;
+    height: 30px;
+}
+#butonoDeAgordoj[aktiva="true"] { background-image: url(agordoj.png); }
+#butonoDeAgordoj:hover { background-image: url(agordoj.png); }
+
+#erarlabelo { background-color: darkred; color: white; qproperty-alignment: AlignCenter; }
+#ceteraInformo { color: #999; qproperty-alignment: AlignCenter; }

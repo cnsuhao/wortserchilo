@@ -1,0 +1,133 @@
+# Bezonata
+
+<Multi_key> <n> <space>             : "ℕ"   U2115
+<Multi_key> <z> <space>             : "ℤ"   U2124
+<Multi_key> <q> <space>             : "ℚ"   U211A
+
+<Multi_key> <A> <X>                 : "Â"   U00C2
+<Multi_key> <A> <x>                 : "Â"   U00C2
+<Multi_key> <a> <x>                 : "â"   U00E2
+<Multi_key> <C> <X>                 : "Ĉ"   U0108
+<Multi_key> <C> <x>                 : "Ĉ"   U0108
+<Multi_key> <c> <x>                 : "ĉ"   U0109
+<Multi_key> <J> <X>                 : "Ĵ"   U0134
+<Multi_key> <J> <x>                 : "Ĵ"   U0134
+<Multi_key> <j> <x>                 : "ĵ"   U0135
+<Multi_key> <G> <X>                 : "Ĝ"   U011C
+<Multi_key> <G> <x>                 : "Ĝ"   U011C
+<Multi_key> <g> <x>                 : "ĝ"   U011D
+<Multi_key> <H> <X>                 : "Ĥ"   U0124
+<Multi_key> <H> <x>                 : "Ĥ"   U0124
+<Multi_key> <h> <x>                 : "ĥ"   U0125
+<Multi_key> <S> <X>                 : "Ŝ"   U015C
+<Multi_key> <S> <x>                 : "Ŝ"   U015C
+<Multi_key> <s> <x>                 : "ŝ"   U015D
+<Multi_key> <u> <u>                 : "ŭ"
+<Multi_key> <U> <u>                 : "ŭ"
+<Multi_key> <u> <U>                 : "Ŭ"
+<Multi_key> <U> <U>                 : "Ŭ"
+<Multi_key> <U> <X>                 : "Ŭ"
+<Multi_key> <U> <x>                 : "Ŭ"
+<Multi_key> <u> <X>                 : "ŭ"
+<Multi_key> <u> <x>                 : "ŭ"
+
+
+
+
+
+# Ne bezonata
+
+<Multi_key> <s> <n> <e>             : "☃"   U2603
+<Multi_key> <comma> <comma>         : "⹂"   U2E42
+<Multi_key> <r> <space>             : "ℝ"   U211D
+<Multi_key> <e> <n>                 : "∧"   U2227
+<Multi_key> <o> <f>                 : "∨"   U2228
+<Multi_key> <k> <u> <n>             : "∪"
+<Multi_key> <k> <o> <m>             : "∩"
+<Multi_key> <v> <slash>             : "√"
+<Multi_key> <asterisk> <asterisk>   : "⋅"
+<Multi_key> <n> <e>                 : "¬"
+<Multi_key> <bar> <equal>           : "⊨"
+<Multi_key> <bar> <slash> <equal>   : "⊭"
+<Multi_key> <c> <minus>             : "∈"
+<Multi_key> <c> <slash> <minus>     : "∉"
+<Multi_key> <s> <o> <m>             : "∑"
+<Multi_key> <c> <i> <u>             : "∀"
+<Multi_key> <i> <u>                 : "∃"
+<Multi_key> <i> <n> <f>             : "∞"
+
+<Multi_key> <a> <l> <f>             : "α"
+<Multi_key> <b> <e> <t>             : "β"
+<Multi_key> <g> <a> <m>             : "γ"
+<Multi_key> <G> <a> <m>             : "Γ"
+<Multi_key> <d> <e> <l>             : "δ"
+<Multi_key> <D> <e> <l>             : "Δ"   U0394
+<Multi_key> <e> <p> <s>             : "ε"
+<Multi_key> <z> <e> <t>             : "ζ"   U03B6
+<Multi_key> <e> <t> <a>             : "η"
+<Multi_key> <t> <h> <e>             : "θ"
+<Multi_key> <T> <h> <e>             : "Θ"
+<Multi_key> <i> <o> <t>             : "ι"
+<Multi_key> <k> <a> <p>             : "κ"
+<Multi_key> <l> <a> <m>             : "λ"   U03BB
+<Multi_key> <L> <a> <m>             : "Λ"
+<Multi_key> <m> <u>                 : "μ"
+<Multi_key> <n> <u>                 : "ν"
+<Multi_key> <x> <i>                 : "ξ"
+<Multi_key> <X> <i>                 : "Ξ"
+<Multi_key> <p> <i>                 : "π"   U03C0
+<Multi_key> <P> <i>                 : "Π"
+<Multi_key> <r> <h> <o>             : "ρ"
+<Multi_key> <s> <i> <g>             : "σ"
+<Multi_key> <s> <i> <2>             : "ς"
+<Multi_key> <S> <i> <g>             : "Σ"
+<Multi_key> <t> <a> <u>             : "τ"
+<Multi_key> <u> <p> <s>             : "υ"
+<Multi_key> <f> <i>                 : "φ"
+<Multi_key> <F> <i>                 : "Φ"
+<Multi_key> <c> <h> <i>             : "χ"
+<Multi_key> <p> <s> <i>             : "ψ"
+<Multi_key> <P> <s> <i>             : "Ψ"
+<Multi_key> <o> <m> <e>             : "ω"
+<Multi_key> <O> <m> <e>             : "Ω"
+
+<Multi_key> <semicolon> <a>         : "ä"
+<Multi_key> <semicolon> <A>         : "Ä"
+<Multi_key> <semicolon> <e>         : "ë"
+<Multi_key> <semicolon> <E>         : "Ë"
+<Multi_key> <semicolon> <i>         : "ï"
+<Multi_key> <semicolon> <I>         : "Ï"
+<Multi_key> <semicolon> <o>         : "ö"
+<Multi_key> <semicolon> <O>         : "Ö"
+<Multi_key> <semicolon> <u>         : "ü"
+<Multi_key> <semicolon> <U>         : "Ü"
+<Multi_key> <a> <semicolon>         : "ä"
+<Multi_key> <A> <semicolon>         : "Ä"
+<Multi_key> <e> <semicolon>         : "ë"
+<Multi_key> <E> <semicolon>         : "Ë"
+<Multi_key> <i> <semicolon>         : "ï"
+<Multi_key> <I> <semicolon>         : "Ï"
+<Multi_key> <o> <semicolon>         : "ö"
+<Multi_key> <O> <semicolon>         : "Ö"
+<Multi_key> <u> <semicolon>         : "ü"
+<Multi_key> <U> <semicolon>         : "Ü"
+<Multi_key> <colon> <a>         : "ä"
+<Multi_key> <colon> <A>         : "Ä"
+<Multi_key> <colon> <e>         : "ë"
+<Multi_key> <colon> <E>         : "Ë"
+<Multi_key> <colon> <i>         : "ï"
+<Multi_key> <colon> <I>         : "Ï"
+<Multi_key> <colon> <o>         : "ö"
+<Multi_key> <colon> <O>         : "Ö"
+<Multi_key> <colon> <u>         : "ü"
+<Multi_key> <colon> <U>         : "Ü"
+<Multi_key> <a> <colon>         : "ä"
+<Multi_key> <A> <colon>         : "Ä"
+<Multi_key> <e> <colon>         : "ë"
+<Multi_key> <E> <colon>         : "Ë"
+<Multi_key> <i> <colon>         : "ï"
+<Multi_key> <I> <colon>         : "Ï"
+<Multi_key> <o> <colon>         : "ö"
+<Multi_key> <O> <colon>         : "Ö"
+<Multi_key> <u> <colon>         : "ü"
+<Multi_key> <U> <colon>         : "Ü"
