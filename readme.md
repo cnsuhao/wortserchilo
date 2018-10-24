@@ -1,4 +1,5 @@
 ![Filmeto](./dok/filmeto.gif)
+
 Kinarta flava ardo estas proviziitan per ffmpeg.
 
 [Binaraj eldonoj](https://github.com/zvd2/wortserchilo-binaraj)
