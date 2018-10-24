@@ -1,4 +1,4 @@
-![Filmeto](./dok/filmeto.mp4)
+![Filmeto](./dok/filmeto.webm)
 
 [Binaraj eldonoj](https://github.com/zvd2/wortserchilo-binaraj)
 
