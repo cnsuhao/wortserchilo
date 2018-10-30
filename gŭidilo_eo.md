@@ -1,9 +1,8 @@
 # La Iom Rapida Vortarilo
 
 Kun la Iom Rapida Vortarilo oni povas trovi difinon de vorto per nur meti kursoro sur ĝi kaj premi alt + x. Ĉi vortaro
-uzas bildleganton, do ĝi ne ĉiam donas la ĝustan rezulton, sed ĝi enhavas multajn ilojn (du) per kiuj oni povas
-plibonigi la legadrezultojn. Krom alt + x, oni ankaŭ povas trovi difinojn per kopii la vorton kaj premi alt + c. 
-Tiel oni preterlasas la ofte malprecizan bildleganton.
+uzas bildleganton, do ĝi ne ĉiam donas la ĝustan rezulton, sed ĝi enhavas kelkajn ilojn per kiuj oni povas
+plibonigi la legadrezultojn. Krom alt + x, oni ankaŭ povas trovi difinojn per kopii la vorton kaj premi alt + c.
 
 La Iom Rapida Vortarilo devus funkcii kun ĉiu lingvo, almenaŭ ĉiu lingvo en la angla Vikivortaro. Mi ankoraŭ nur duone
 realigis ke oni povas uzi aliajn fontojn de difinojn ol la angla Vikivortaro, plejparte ĉar mi nur kreis
@@ -11,9 +10,9 @@ formatkonvertanton por tiu vortaro. Ĝi povas funkcii sen interreto. Mi intencii
 norme, sed bedaŭrinde konverti Vikitekston al HTML estas malfacilan kaj ne estis klara al mi ĉu la disponeblaj neretaj
 konvertiloj bonis, do ĝi uzas la retan Parsoid servon de la Vikivortaro mem. La konverto ne necesas ĉar oni povas
 legi la difinojn el la Vikitekston, kvankam tio ne estas tre bela. Vi ankaŭ povas ruli Parsoid sur via propra komputilo
-sed ĝi estas iom malfacilan. Mi kreis gvidilon por fari tion sur Debian: [ligo](./dok/Parsoid sur Debian.md).
+sed ĝi estas iom malfacilan. Mi kreis gvidilon por fari tion sur Debian: [ligo](dok/Parsoid-sur-Debian.md).
 
-La programo havas kelkajn amuzajn surprizojn por via serĉĝuo:
+La programo ankoraŭ enhavas kelkajn cimojn:
  - Se vi elektas novajn vortarojn dum ke la programo ankoraŭ ŝarĝas vortarojn, la fasado frostas por iom da tempo.
  - La plej granda vortaro, la angla vortaro, bezonas pli ol unu gigabajto de labormemoro.
  - Oni bezonas musradon por trairi la fasadon.
@@ -55,11 +54,34 @@ Klavoj en la blanknigra bildo:
 
 Blanke farbi la bildon kaj inundi ĝin kun blanko estas la plej utilajn.
 
+## Eldonoj
+
+Oni provas trovi binarajn eldonojn ĉe <https://github.com/zvd2/wortserchilo-binaraj>.
+
+## Kompili
+
+Por kompili ĉi programo oni bezonas le jenajn funkciarojn:
+ - Tesseract 4
+ - Leptonica
+ - ZipIOS++ 2
+ - CURL
+ - CURL++
+ - Qt5Widgets
+ - UGlobalHotkeys
+ - YAML-CPP
+ - Boost 1.62 serialization, iostreams, system kaj unit_test_framework
+ - ICU 60 unicode (uc) kaj internationalization (i18n).
+ 
+La Debian pakaĵujo ne enhavas ZipIOS 2 aŭ UGlobalHotkeys, la aliaj funkciaroj estas en la jenaj pakaĵoj:
+```
+libtesseract-dev libleptonica-dev libcurl-4-gnutls-dev libcurlpp-dev libyaml-cpp-dev libboost-system1.62-dev libboost-iostreams1.62-dev libboost-serialization1.62-dev libboost-test1.62-dev libqt5widgets5 libicu-dev
+```
+
 ## Helpi
 
 Se vi ne povas programi ion-ajn, vi ankoraŭ povas helpi en la jenaj manieroj:
  - Laboru al la [VikiVortaron](https://www.wiktionary.org) aŭ iun-ajn alian fonton de vortaroj.
- - [Traduku la fasadon.](./dok/traduki la fasadon.md)
+ - [Traduku la fasadon.](dok/traduki-la-fasadon.md)
  - [Traduku la liston de lingvoj.](https://hosted.weblate.org/projects/iso-codes/iso-639-3/)
 
 #### Kodo

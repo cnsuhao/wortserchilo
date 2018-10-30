@@ -14,7 +14,7 @@ and finding a library that does it for C or C++ with proper documentation is eve
 relies on the Wiktionary's online Parsoid service to do that conversion. The conversion process is optional however as
 you can read definitions from the Wikitext just fine. By leaving the conversion step out you can still use it offline.
 You can also host a Parsoid server on your local machine, but Parsoid needs a Mediawiki set up so it's quite a hassle.
-I made a guide for doing it but the guide is in Esperanto and only for Debian: [link](./dok/Parsoid sur Debian.md).
+I made a guide for doing it but the guide is in Esperanto and only for Debian: [link](./dok/Parsoid-sur-Debian.md).
 
 This program has several easter eggs for you to find, such as:
  - The English dictionary currently takes over a gigabyte of RAM.
@@ -97,7 +97,7 @@ some makefiles and make it. If linking fails you should adjust the paths in the 
 
 If you can't program, you can help in the following ways:
  - Contribute to the [Wiktionary](https://www.wiktionary.org) or any other dictionary source used.
- - [Help translate the interface.](./dok/traduki la fasadon.md)
+ - [Help translate the interface.](./dok/traduki-la-fasadon.md)
  - [Help translate the list of languages.](https://hosted.weblate.org/projects/iso-codes/iso-639-3/)
 
 #### Programming
