@@ -1,17 +1,15 @@
 # The Somewhat Fast Dictionary
 
 With The Somewhat Fast Dictionary you can point your cursor at a word, press alt + x and maybe get a definition of the
-word you were pointing at. This program features an extensive set of tools (two of them) which you can use to try to
-make the results less bad. Alternatively you can copy the word into the clipboard and press alt + c, which gives the
-definition without doing the unreliable OCR step.
+word you were pointing at. Alternatively you can copy the word into the clipboard and press alt + c, which gives the
+definition without doing the unreliable OCR step. The Somewhat Fast Dictionary should work with most languages, although
+it will most probably not work as well with less common scripts as with Latin. It was not designed to work with
+handwriting and is much less likely to work on text that's distorted by perspective.
 
-This is an OCR dictionary, which means it makes an attempt at reading things from images and screenshots. It doesn't
-always do it all that well but it does always try. This is meant to work with every language but right now it works a
-little better with western languages than with eastern languages. It was meant to be able to provide definitions from
-multiple sources at the same time but I only made a program to format the definitions of the English Wiktionary and I
-didn't fully implement using dictionaries from any other source yet.
+This is an OCR dictionary, which means it tries to read text from images and screenshots. OCR results
+may sometimes need some cleanup, but the program has some tools to make it easy and quick to clean up results.
 
-This program was also meant to be fully offline but as it turns out converting Wikitext into HTML is really difficult
+This program was meant to be fully offline but as it turns out converting Wikitext into HTML is really difficult
 and finding a library that does it for C or C++ with proper documentation is even more difficult. In the end it still
 relies on the Wiktionary's online Parsoid service to do that conversion. The conversion process is optional however as
 you can read definitions from the Wikitext just fine. By leaving the conversion step out you can still use it offline.
