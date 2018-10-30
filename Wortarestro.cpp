@@ -1,5 +1,6 @@
 #include <thread>
 #include <filesystem>
+#include <zipios/zipiosexceptions.hpp>
 #include "Wortarestro.hpp"
 #include "komuna/DividataAdres.hpp"
 #include "komuna/alTexto.hpp"
@@ -7,7 +8,14 @@
 Wortarestro::Wortarestro(Texto dosieroDeWortarujo)
 {
     kreuProvizoranDosierujon();
-    wortarujo = zipios::ZipFile(dosieroDeWortarujo.STL());
+    try
+    {
+        wortarujo = zipios::ZipFile(dosieroDeWortarujo.STL());
+    }
+    catch (zipios::IOException& e)
+    {
+        throw Eraro("Ŝarĝi dosieron «" + dosieroDeWortarujo + "» malsukcesis: e.what()");
+    }
 }
 
 Wortarestro::~Wortarestro()

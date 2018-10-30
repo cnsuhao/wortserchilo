@@ -4,6 +4,7 @@
 #include "TesseractLeganto.hpp"
 #include "Ekranbildo.hpp"
 #include "komuna/cet/alBuleo.hpp"
+#include "montruEraron.hpp"
 
 using Parametrujo = UnikaroPara<Texto, Texto>;
 Q_DECLARE_METATYPE(Difino)
@@ -100,15 +101,25 @@ Nenio Wortserchilo::montruDifinojnDeWortoCheKursoro()
     Ortangelo<ℤ> ortangelo(kursorloko.x() - bildlarĝo / 2, kursorloko.y() - bildalto / 2, bildlarĝo, bildalto);
     
     if (std::filesystem::exists(kolora_bildo.STL()) kaj ne std::filesystem::remove(kolora_bildo.STL()))
-        std::cerr << "Dosiero «" + kolora_bildo.STL() + "» jam existas kaj ni ne povas forpreni ĝin." << std::endl;
-    else if (ne provuKreiBildonDeEkrano(kolora_bildo, ortangelo))
-        std::cerr << "Krei ekranbildon malsukcesis." << std::endl;
-    else
     {
-        ĉeffenestro->reŝarĝuKoloranBildon();
-        ĉeffenestro->show();
-        ĉeffenestro->raise();
+        montruEraron("Ne provas preni ekranbildon: "
+                     "Dosiero «" + kolora_bildo.STL() + "» jam existas kaj ni ne povas forpreni ĝin.");
+        eligu;
     }
+    
+    try
+    {
+        kreuBildonDeEkrano(kolora_bildo, ortangelo);
+    }
+    catch (Eraro& eraro)
+    {
+        montruEraron("Ne provas preni ekranbildon: " + eraro.tutaTexto);
+        eligu;
+    }
+    
+    ĉeffenestro->reŝarĝuKoloranBildon();
+    ĉeffenestro->show();
+    ĉeffenestro->raise();
 }
 
 Nenio Wortserchilo::montruDifinojnDeWortoEnPosho()
@@ -412,7 +423,7 @@ Nenio Wortserchilo::provuKonserviAgordojn(const Texto& dosiero)
     }
     catch (YAML::Exception& eraro)
     {
-        std::cerr << "Konservi agordojn en «" << dosiero.STL() << "» malsukcesis: " << eraro.what() << std::endl;
+        montruEraron("Konservi agordojn en «" + dosiero + "» malsukcesis: " + eraro.what());
     }
 }
 

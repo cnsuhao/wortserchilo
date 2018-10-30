@@ -1,4 +1,5 @@
 #include "Difinujo.hpp"
+#include "../montruEraron.hpp"
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QVBoxLayout>
 
@@ -37,8 +38,7 @@ Buleo Difinujo::provuAgordiTransliteranton(const Texto& nomo)
     
     if (U_FAILURE(eraro))
     {
-        std::cerr << "Krei transliteranton «" << nomo.STL() << "» malsukcesis: "
-                  << std::string(u_errorName(eraro)) << std::endl;
+        montruEraron("Krei transliteranton «" + nomo + "» malsukcesis: " + Texto(u_errorName(eraro)));
         eligu malveran;
     }
     

@@ -10,14 +10,6 @@
 #include "Difino.hpp"
 #include "InformoDeWortaro.hpp"
 
-class Eraro_MankasSugestanton : public Eraro
-{
-public:
-    Eraro_MankasSugestanton(Linguo linguo)
-            : Eraro("La program ne povis ŝarĝi wortaron.",
-                    "La wortarujo mankas sugestanton dipor la linguon «" + linguo.iso639_3 + "».") {}
-};
-
 class Eraro_NeRekonitanSpeconDeWortaro : public Eraro
 {
 public:

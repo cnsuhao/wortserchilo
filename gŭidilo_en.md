@@ -63,6 +63,38 @@ Controls in the black and white image:
 
 Most useful are a big white brush and ctrl + left click.
 
+## Downloads
+
+Download links can be found at <https://github.com/zvd2/wortserchilo-binaraj>.
+
+## Compiling
+
+The Somewhat Fast Dictionary requires the following libraries:
+ - Tesseract 4, for OCR
+ - Leptonica, needed to interface with Tesseract
+ - ZipIOS++ 2, for unpacking difinoj.zip. I don't know if ZipIOS++ 1 works as well, I only tried 2.
+ - CURL, for sending requests to the Parsoid server.
+ - CURL++, C++ interface for CURL. I really only used CURL in one class so adding this library was stupid,
+   but I can't be bothered to get rid of it now.
+ - Qt5Widgets, GUI library.
+ - UGlobalHotkeys, does what it says on the tin.
+ - YAML-CPP, really only used for the config file.
+ - Boost 1.62 serialization, iostreams, system and unit_test_framework. 
+   IOStreams is used in some /komuna/ classes.
+   Serialization isn't actually used but some /komuna/ classes depend on
+   it and I'm too lazy to get rid of the dependency.
+ - Optionally ICU 60 unicode (uc) and internationalization (i18n).
+   Unicode is used for making words lowercase and internationalization 
+   is used for transliterating words. 
+ 
+ZipIOS 2 and UGlobalHotkeys are not in the Debian archive, the rest is in the following packages:
+```
+libtesseract-dev libleptonica-dev libcurl-4-gnutls-dev libcurlpp-dev libyaml-cpp-dev libboost-system1.62-dev libboost-iostreams1.62-dev libboost-serialization1.62-dev libboost-test1.62-dev libqt5widgets5 libicu-dev
+```
+
+The rest of compilation is just a normal CMake procedure: Run cmake or the CMake GUI in the source folder, generate
+some makefiles and make it. If linking fails you should adjust the paths in the CMake cache.
+
 ## Contributing
 
 If you can't program, you can help in the following ways:

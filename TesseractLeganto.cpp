@@ -34,7 +34,7 @@ RealigoDeBildleganto::Rezulto TesseractLeganto::leguBildon(const Texto& bilddosi
         rezulto.rezulto = kreuRezulton();
         rezulto.ĉuEstasValidanRezulton = veran;
     }
-    else std::cerr << "Tesseract ne povis legi bildon «" << bilddosiero.STL() << "».";
+    else std::cerr << "Tesseract ne povis legi bildon «" << bilddosiero.STL() << "»." << std::endl;
     
     eligu rezulto;
 }
@@ -107,8 +107,7 @@ Buleo TesseractLeganto::provuLegi(const Texto& bilddosiero)
     pixDestroy(&bildo);
     tesseract.SetSourceResolution(70);
     tesseract.SetPageSegMode(tesseract::PSM_SPARSE_TEXT);
-    eligu
-            tesseract.Recognize(&revizanto) == 0;
+    eligu tesseract.Recognize(&revizanto) == 0;
 }
 
 RezultoDeLegado TesseractLeganto::kreuRezulton()

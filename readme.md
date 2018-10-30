@@ -1,9 +1,9 @@
 ![Filmeto](./dok/filmeto.gif)
 
-Kinarta flava ardo estas proviziitan per ffmpeg.
+Cinematic yellow glow courtesy of ffmpeg.
 
-[Binaraj eldonoj](https://github.com/zvd2/wortserchilo-binaraj)
-
-[Esperanta gvidilo](./gŭidilo_eo.md)
+[Releases](https://github.com/zvd2/wortserchilo-binaraj)
 
 [English manual](./gŭidilo_en.md)
+
+[Esperanta gvidilo](./gŭidilo_eo.md)

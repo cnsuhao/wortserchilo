@@ -107,7 +107,7 @@ set(FONTDOSIEROJ
         fasado/AranĝantoKunAnimacioj.hpp
         fasado/komencuAnimacion.hpp)
 
-add_executable(Wortserchilo main.cpp ${FONTDOSIEROJ})
+add_executable(Wortserchilo main.cpp ${FONTDOSIEROJ} montruEraron.hpp)
 target_link_libraries(Wortserchilo ${FUNKCIAROJ})
 
 add_executable(Wortserchilo_test test.cpp ${FONTDOSIEROJ} ${TESTDOSIEROJ})
