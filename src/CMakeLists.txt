@@ -56,7 +56,7 @@ configure_file(tradukoj/nld.qm ${CMAKE_BINARY_DIR}/tradukoj/nld.qm COPYONLY)
 configure_file(tradukoj/epo.qm ${CMAKE_BINARY_DIR}/tradukoj/epo.qm COPYONLY)
 configure_file(tradukoj/eng.qm ${CMAKE_BINARY_DIR}/tradukoj/eng.qm COPYONLY)
 
-install (FILES stilo.qss linguoj.png agordoj.png gŭidilo_en.md gŭidilo_eo.md 
+install (FILES stilo.qss linguoj.png agordoj.png ../guide_en.md ../guide_eo.md 
          "linguoj magra.png" "agordoj magra.png" DESTINATION .)
 install (FILES tradukoj/nld.qm tradukoj/epo.qm tradukoj/eng.qm DESTINATION ./tradukoj)
 
@@ -117,19 +117,19 @@ install(TARGETS Wortserchilo DESTINATION ./)
 
 
 # CPack
-include(InstallRequiredSystemLibraries)
-
-set(CPACK_PACKAGE_NAME "La Iom Rapida Wortserĉilo")
-set(CPACK_PACKAGE_DESCRIPTION "Bildleganta wortaro.")
-set(CPACK_PACKAGE_VENDOR "Zowie van Dillen")
-set(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/gŭidilo_en.md")
-set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/license.txt")
-set(CPACK_PACKAGE_VERSION_MAJOR "1")
-set(CPACK_PACKAGE_VERSION_MINOR "0")
-set(CPACK_PACKAGE_VERSION_PATCH "0")
-
+#include(InstallRequiredSystemLibraries)
+#
+#set(CPACK_PACKAGE_NAME "La Iom Rapida Wortserĉilo")
+#set(CPACK_PACKAGE_DESCRIPTION "Bildleganta wortaro.")
+#set(CPACK_PACKAGE_VENDOR "Zowie van Dillen")
+#set(CPACK_PACKAGE_DESCRIPTION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/guide_en.md")
+#set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_CURRENT_SOURCE_DIR}/license.txt")
+#set(CPACK_PACKAGE_VERSION_MAJOR "1")
+#set(CPACK_PACKAGE_VERSION_MINOR "0")
+#set(CPACK_PACKAGE_VERSION_PATCH "0")
+#
 # todo RPM, DEB
-set(CPACK_GENERATOR "TGZ;TZ;")
-
-include(CPack)
+#set(CPACK_GENERATOR "TGZ;TZ;")
+#
+#include(CPack)
 

@@ -3,7 +3,7 @@
 With The Somewhat Fast Dictionary you can point your cursor at a word, press alt + x and maybe get a definition of the
 word you were pointing at. Alternatively you can copy the word into the clipboard and press alt + c, which gives the
 definition without doing the unreliable OCR step. The Somewhat Fast Dictionary should work with most languages, although
-it will most probably not work as well with less common scripts as with Latin. It was not designed to work with
+it will most probably not work as well with non-Latin scripts. It was not designed to work with
 handwriting and is much less likely to work on text that's distorted by perspective.
 
 This is an OCR dictionary, which means it tries to read text from images and screenshots. OCR results
@@ -14,14 +14,19 @@ and finding a library that does it for C or C++ with proper documentation is eve
 relies on the Wiktionary's online Parsoid service to do that conversion. The conversion process is optional however as
 you can read definitions from the Wikitext just fine. By leaving the conversion step out you can still use it offline.
 You can also host a Parsoid server on your local machine, but Parsoid needs a Mediawiki set up so it's quite a hassle.
-I made a guide for doing it but the guide is in Esperanto and only for Debian: [link](./dok/Parsoid-sur-Debian.md).
+I made a guide for doing it but the guide is in Esperanto and only for Debian: [link](./docs/Parsoid-sur-Debian.md).
 
-This program has several easter eggs for you to find, such as:
+This program has several misfeatures you should know about, such as:
+ - The graphic design I made is kinda shitty. To defend my honor I'll have you know I didn't spend a lot of time on it.
  - The English dictionary currently takes over a gigabyte of RAM.
  - The program uses Tesseract's word boundaries for alt + x. For languages which don't use spacing to seperate words 
  (like East Asian languages) these aren't very good, although at least it usually gets the characters right.
  - A scroll wheel is necessary for navigating the interface.
  - If you select new dictionaries while dictionaries are still being loaded the GUI freezes for a while.
+ - The first time you click a language in the language selection screen the dictionary description slides in, causing
+   the language list to slide down, which is a bit annoying.
+
+Despite all this it's very usable as is. Furthermore, I'm lazy, so don't expect fixes soon.
 
 
 ## Usage
@@ -97,7 +102,7 @@ some makefiles and make it. If linking fails you should adjust the paths in the 
 
 If you can't program, you can help in the following ways:
  - Contribute to the [Wiktionary](https://www.wiktionary.org) or any other dictionary source used.
- - [Help translate the interface.](./dok/traduki-la-fasadon.md)
+ - [Help translate the interface.](./docs/traduki-la-fasadon.md)
  - [Help translate the list of languages.](https://hosted.weblate.org/projects/iso-codes/iso-639-3/)
 
 #### Programming
@@ -108,11 +113,11 @@ I didn't take others into consideration when making my codebase so there's some 
 contributing:
  - The source code is in Esperanto, and not even proper Esperanto but my special flavor of Esperanto. It should be
    easy to understand if you already know Esperanto but words will sometimes be a problem to look up in a dictionary.
-   I made a [small dictionary with the terms I use most often](./dok/dictionary.md); I hope it makes coping with my code
+   I made a [small dictionary with the terms I use most often](./docs/dictionary.md); I hope it makes coping with my code
    easier.
  - The source code uses non-ASCII characters. To my knowledge G++ doesn't support anything non-ASCII so you'll have to
    use Clang++. Fortunately Clang++ has the same interface as G++. Non-ASCII characters can be a bit challenging to
-   type, if you're on Linux and using XCompose you can add [my custom XCompose bindings](./dok/XCompose),
+   type, if you're on Linux and using XCompose you can add [my custom XCompose bindings](./docs/XCompose),
    and if you're using some other keyboard compositor it's still a good reference. On Windows I guess you could try to
    copy and paste things but it's pretty tedious. Otherwise you could run a regex on the folder to replace the
    characters with strings that definitely won't appear anywhere else and run another regex to change them back
@@ -124,4 +129,4 @@ implement or fix something, open an issue and I'll give you some pointers on how
 questions about my questionable software architecture. I'll also still handle pull requests and keep track of bugs and
 feature requests.
 
-![Drawing of program architecture](./dok/arĥitekturo.png)
+![Drawing of program architecture](./docs/arĥitekturo.png)

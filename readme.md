@@ -1,9 +1,9 @@
-![Filmeto](./dok/filmeto.gif)
+![Language selection video](./docs/langselect.gif) ![Definition video](./docs/definition.gif)
 
 Cinematic yellow glow courtesy of ffmpeg.
 
 [Releases](https://github.com/zvd2/wortserchilo-binaraj)
 
-[English manual](./gŭidilo_en.md)
+[English manual](./guide_en.md)
 
-[Esperanta gvidilo](./gŭidilo_eo.md)
+[Esperanta gvidilo](./guide_eo.md)

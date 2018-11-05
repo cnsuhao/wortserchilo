@@ -133,8 +133,7 @@ Please mention in an issue if there's any other word you can't figure out.
 If you need to translate a word into Esperanto I recommend reta-vortaro.de. Reta Vortaro provides the actual definitions
 in Esperanto however, which will be difficult to follow with little experience. Nonetheless it's important to look at
 the definitions and not just the translations to ensure you get the right semantic. After all, if a word has multiple
-definitions in English, other languages may use different words for specific definitions. I myself learned the hard
-way that anglophones are less inclined to sit on a bank than the Dutch.
+definitions in English, other languages may use different words for specific definitions.
 
 #### Differences from normal Esperanto
 
@@ -142,11 +141,8 @@ The Esperanto I use in my code differs a bit from normal Esperanto because I was
 Esperantido (Esperanto-derived constructed language) but never got around to actually making the formal definition.
 Reason for the Esperantido is that Esperanto's grammar is a bit minimal. Formally it's sixteen rules that vaguely
 describes the language by describing how it differs from other European languages, but it doesn't scratch the surface of
-Esperanto's actual grammar. I was thinking of making a formally defined Esperantido, which would be almost entirely like
-Esperanto but with a full formal definition, to the point where it would be possible to make an algorithm that could
-completely consistently check whether a sentence is grammatically cohesive, of course neglecting semantics. I got plenty
-of ideas over time but spent little time actually working on this large undertaking. As such I've more or less left it
-by the wayside, but not without applying my vague grammatical ideas to my codebases.
+Esperanto's actual grammar. Over time I got plenty of ideas for it but spent very little time actually working on it.
+As such I've more or less left it by the wayside, but not without applying my vague grammatical ideas to my codebases.
 
 Here's a pretty much exhaustive list of differences from normal Esperanto:
  - “kv” is “qŭ” because it's more recognizable. E.g. “freqŭenco” instead of “frekvenco”.
@@ -156,5 +152,5 @@ Here's a pretty much exhaustive list of differences from normal Esperanto:
  - Since recently I use “-ora” as comparative and “-ima” as superlative suffix, e.g. “bonoran” instead of “pli bonan”
  - I write “ĝi estas bela**n**” instead of “ĝi estas bela”.
 
-My code isn't always perfectly consistent in this because I come up with these things as I go, and some of the code is
-from earlier projects.
+My code isn't always perfectly consistent in this because I came up with these things as I go, and some of the code is
+from an earlier project.

@@ -6,9 +6,9 @@ plibonigi la legadrezultojn. Krom alt + x, oni ankaŭ povas trovi difinojn per k
 
 La Iom Rapida Vortarilo devus funkcii kun ĉiu lingvo, almenaŭ ĉiu lingvo en la angla Vikivortaro. Mi ankoraŭ nur duone
 realigis ke oni povas uzi aliajn fontojn de difinojn ol la angla Vikivortaro, plejparte ĉar mi nur kreis
-formatkonvertanton por tiu vortaro. Ĝi povas funkcii sen interreto. Mi intenciis ke ĝi funkcias tute sen interreto
-norme, sed bedaŭrinde konverti Vikitekston al HTML estas malfacilan kaj ne estis klara al mi ĉu la disponeblaj neretaj
-konvertiloj bonis, do ĝi uzas la retan Parsoid servon de la Vikivortaro mem. La konverto ne necesas ĉar oni povas
+formatkonvertanton por tiu vortaro. Ĝi povas funkcii sen interreto, sed ĝi norme bezonas interreton por bele montri la
+difinojn, ĉar bedaŭrinde konverti Vikitekston al HTML estas malfacilan kaj ne estis klara al mi ĉu la disponeblaj neretaj
+konvertiloj bonis. Tial ĝi uzas la retan Parsoid servon de la Vikivortaro mem. La konverto ne necesas ĉar oni povas
 legi la difinojn el la Vikitekston, kvankam tio ne estas tre bela. Vi ankaŭ povas ruli Parsoid sur via propra komputilo
 sed ĝi estas iom malfacilan. Mi kreis gvidilon por fari tion sur Debian: [ligo](dok/Parsoid-sur-Debian.md).
 
@@ -81,7 +81,7 @@ libtesseract-dev libleptonica-dev libcurl-4-gnutls-dev libcurlpp-dev libyaml-cpp
 
 Se vi ne povas programi ion-ajn, vi ankoraŭ povas helpi en la jenaj manieroj:
  - Laboru al la [VikiVortaron](https://www.wiktionary.org) aŭ iun-ajn alian fonton de vortaroj.
- - [Traduku la fasadon.](dok/traduki-la-fasadon.md)
+ - [Traduku la fasadon.](docs/traduki-la-fasadon.md)
  - [Traduku la liston de lingvoj.](https://hosted.weblate.org/projects/iso-codes/iso-639-3/)
 
 #### Kodo
@@ -101,7 +101,7 @@ Se vi volas helpi per aldoni kodon, vi devas scii ke:
  - La fontkodo enhavas karakterojn ekster ASCII, ĉefe la ĉapliterojn. Mi kredas ke G++ ankoraŭ ne subtenas karakterojn
    ekster ASCII, do oni devas anstataŭe uzi Clang++, kiu ĝue havas la saman fasadon. Mi estas certan pri ke se vi konas
    Esperanton sufiĉe bone por legi ĉi dosieron, vi povas tajpi ĉapliterojn, sed mi ankaŭ uzas «ℤ», «ℕ» kaj «ℚ» por la
-   specoj de numeroj. Se vi uzas XCompose sur Linux, vi povas enmeti [miajn XCompose klavligojn](./dok/XCompose). Se vi
+   specoj de numeroj. Se vi uzas XCompose sur Linux, vi povas enmeti [miajn XCompose klavligojn](./docs/XCompose). Se vi
    uzas alian karakterkomponilon, vi ankoraŭ povas uzi ĝin kiel referenco.
  - La fontkodo kutime mankas priskribantajn komentojn, sed
    almenaŭ miaj nomoj priskribas la celon de iliaj variebloj iom.
@@ -111,4 +111,4 @@ realigi aŭ ripari ion, kreu «issue»-on kaj mi eble provos helpi vin iom per i
 kiel vi povas realigi ion. Mi ankoraŭ traktos enmetadpetojn, kaj mi ordigos cimo-raportojn kaj petojn por novaj eblecoj,
 kvankam mi mem verŝajne ne plenumos ilin.
 
-![Bildo de programarĥitekturo](./dok/arĥitekturo.png)
+![Bildo de programarĥitekturo](./docs/arĥitekturo.png)
