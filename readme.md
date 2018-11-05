@@ -2,6 +2,10 @@
 
 Cinematic yellow glow courtesy of ffmpeg.
 
+## The Somewhat Fast Dictionary
+
+A dictionary tool useful for reading texts in foreign languages.
+
 [Releases](https://github.com/zvd2/wortserchilo-binaraj)
 
 [English manual](./guide_en.md)
